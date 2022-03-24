@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Weather.io</h1>
+
+    <div id="search">
+        <div id="search-icon-div">
+            <svg id='search-icon' xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </div>
+        <input type="text" name="searchCity" id="searchCity" placeholder="Search city">
+        <p id="error-message"></p>
+    </div>
+
+    <div id='loading'>
+        <img src="loading.gif" alt="">
+    </div>
+
+
+    <div id="weather">
+        <div id="main-info">
+            <p id="location"></p>
+            <div id="temp-icon">
+                <p id="temperature"></p>
+                <img src="" alt="" id="weather-icon">
+            </div>
+            <p id="description"></p>
+        </div>
+
+        <div id="additional-info">
+            <p class="addon" id="feelsLike">Feels like: </p>
+            <p class="addon" id="humidity">Humidity: </p>
+            <p class="addon" id="wind">Wind: </p>
+        </div>
+    </div>
+
+</body>
+</html>
